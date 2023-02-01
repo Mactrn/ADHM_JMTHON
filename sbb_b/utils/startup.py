@@ -86,7 +86,7 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await sbb_b.tgbot.get_me()
-    perf = "[ جمثون ]"
+    perf = "[ العابث ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
@@ -109,10 +109,10 @@ async def startupmessage():
             if BOTLOG:
                 await sbb_b.tgbot.send_file(
                     BOTLOG_CHATID,
-                    "https://graph.org//file/c20c4f492da1811e1bef0.jpg",
-                    caption="**تم تشغيل سورس جمثون بنجاح لعرض الاوامر ارسل .الاوامر**",
+                    "https://telegra.ph/file/81819660953e6729827e0.jpg",
+                    caption="**تم تشغيل سورس العابث بنجاح لعرض الاوامر ارسل .الاوامر**",
                     buttons=[
-                        (Button.url("كروب المساعدة", "https://t.me/jmthon_support"),)
+                        (Button.url("المطورللمساعدة", "https://t.me/ALAPATH"),)
                     ],
                 )
                 addgvar("DEPLOY", "Done")
@@ -123,9 +123,9 @@ async def startupmessage():
             if BOTLOG:
                 await sbb_b.tgbot.send_message(
                     BOTLOG_CHATID,
-                    "**تم اعادة سورس جمثون بنجاح لعرض الاوامر ارسل .الاوامر**",
+                    "**تم اعادة سورس العابث بنجاح لعرض الاوامر ارسل .الاوامر**",
                     buttons=[
-                        (Button.url("كروب المساعدة", "https://t.me/jmthon_support"),)
+                        (Button.url("المطورللمساعدة", "https://t.me/ALAPATH"),)
                     ],
                 )
         except Exception as e:
@@ -269,7 +269,7 @@ async def verifyLoggerGroup():
         descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
         photobt = await sbb_b.upload_file(file="razan/pic/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "كروب بوت جمثون", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "كروب بوت العابث", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم انشاء كروب الحفظ بنجاح")
